@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+   .colortext {
+        color: red; /* Красный цвет выделения */
+   }
+  </style>
+</head>
+<body>
+<br>
+<h2>Найдено кандидатов со скиллом {{skill}}: <span class="colortext">{{cnt}}</span></h2>
+{% for user in users %}
+<p>{{user}}</p>
+{% endfor %}
+</body>
+</html>
